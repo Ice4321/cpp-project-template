@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(project)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS on)
+set(CMAKE_CXX_COMPILER g++)
 set(Flags "-Wall" "-Wextra" "-Wpedantic" "-O3" "-std=c++20" "-fsanitize=address,undefined")
 add_compile_options(${Flags})
 add_link_options(${Flags})
